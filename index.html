@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthcare Access Tool</title>
+    <title>RemoteCare CLI</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <style>
         body {
@@ -26,14 +26,12 @@
 <body class="bg-gray-100">
     <header class="bg-blue-600 text-white p-4 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Healthcare Access Tool</h1>
+            <h1 class="text-2xl font-bold">RemoteCare CLI</h1>
             <nav>
                 <ul class="flex space-x-4">
                     <li><a href="#problem" class="hover:underline">Problem</a></li>
                     <li><a href="#features" class="hover:underline">Features</a></li>
-                    <li><a href="#downloads" class="hover:underline">Downloads</a></li>
-                    <li><a href="#pricing" class="hover:underline">Pricing</a></li>
-                    <li><a href="#testimonials" class="hover:underline">Testimonials</a></li>
+                    <li><a href="#commands" class="hover:underline">Commands</a></li>
                     <li><a href="#contact" class="hover:underline">Contact</a></li>
                 </ul>
             </nav>
@@ -44,69 +42,54 @@
         <!-- Problem Section -->
         <section id="problem" class="mb-8">
             <h2 class="text-xl font-bold mb-4">The Problem</h2>
-            <p class="text-gray-700">Millions in rural areas struggle with limited healthcare access. Our tool addresses this challenge by providing a user-friendly platform for scheduling teleconsultations, sharing health guidelines, and securely managing patient data.</p>
+            <p class="text-gray-700">In remote rural areas, access to emergency medical assistance is often delayed due to poor communication, lack of infrastructure, and limited availability of healthcare providers. RemoteCare CLI solves this by streamlining emergency management and communication.</p>
         </section>
 
         <!-- Features Section -->
         <section id="features" class="mb-8">
-            <h2 class="text-xl font-bold mb-4">Tool Features</h2>
+            <h2 class="text-xl font-bold mb-4">Core Features</h2>
             <ul class="list-disc list-inside text-gray-700">
-                <li>Streamlined scheduling system for healthcare appointments.</li>
-                <li>Access to community-specific health guidelines.</li>
-                <li>Secure patient data sharing compliant with data privacy standards.</li>
-                <li>Log emergencies and prioritize cases (from CLI).</li>
-                <li>Access first aid guides (from CLI).</li>
+                <li>Log medical emergencies with details like patient name, location, symptoms, and severity level.</li>
+                <li>Prioritize emergencies based on severity (High > Medium > Low).</li>
+                <li>Notify nearby healthcare providers via SMS or email.</li>
+                <li>Provide offline first aid guides for common emergencies.</li>
             </ul>
         </section>
 
-        <!-- Downloads Section -->
-        <section id="downloads" class="mb-8">
-            <h2 class="text-xl font-bold mb-4">Downloads</h2>
-            <p class="text-gray-700">Download platform-specific binaries below:</p>
-            <ul class="list-disc list-inside text-gray-700">
-                <li><a href="#" class="text-blue-600 hover:underline">Linux</a></li>
-                <li><a href="#" class="text-blue-600 hover:underline">Windows</a></li>
-                <li><a href="#" class="text-blue-600 hover:underline">macOS</a></li>
-                <li><a href="#" class="text-blue-600 hover:underline">ARM-based devices</a></li>
-            </ul>
-            <p class="mt-2">New users? Check out our <a href="#" class="text-blue-600 hover:underline">installation guide</a>.</p>
-            <pre class="bg-gray-200 p-4 rounded mt-4">
-                # Clone the repository
-                git clone https://github.com/Tabs208/remotecare.git
-                cd remotecare
-
-                # Run the CLI tool
-                cargo run -- help
+        <!-- Commands Section -->
+        <section id="commands" class="mb-8">
+            <h2 class="text-xl font-bold mb-4">How to Use</h2>
+            <h3 class="text-lg font-semibold">Log Medical Emergencies</h3>
+            <pre class="bg-gray-200 p-4 rounded">
+remotecare log --name "John Doe" --symptoms "Severe chest pain" --location "Village A" --severity "High"
             </pre>
-        </section>
-
-        <!-- Pricing Section -->
-        <section id="pricing" class="mb-8">
-            <h2 class="text-xl font-bold mb-4">Pricing Model</h2>
-            <p class="text-gray-700">Our tool is <span class="font-bold">free for individual use</span> to ensure accessibility in rural areas. Advanced features for organizations, such as reporting and system integrations, are available through a paid subscription.</p>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="mb-8">
-            <h2 class="text-xl font-bold mb-4">Testimonials</h2>
-            <blockquote class="text-gray-700 italic border-l-4 border-blue-600 pl-4">
-                "This tool has revolutionized how we manage healthcare in rural Kenya! Scheduling and patient data sharing have never been easier." - Community Health Volunteer
-            </blockquote>
-            <blockquote class="text-gray-700 italic border-l-4 border-blue-600 pl-4 mt-4">
-                "An essential tool for NGOs supporting rural clinics." - NGO Representative
+            <h3 class="text-lg font-semibold mt-4">Prioritize Cases</h3>
+            <pre class="bg-gray-200 p-4 rounded">
+remotecare prioritize
+            </pre>
+            <h3 class="text-lg font-semibold mt-4">View First Aid Guide</h3>
+            <pre class="bg-gray-200 p-4 rounded">
+remotecare guide --topic "burns"
+            </pre>
+            <p class="text-gray-700 mt-2">Example Output:</p>
+            <blockquote class="bg-gray-100 border-l-4 border-blue-600 p-4 text-gray-700 italic">
+                First Aid for Burns:
+                - Cool the burn under running water for at least 10 minutes.
+                - Cover the burn with a clean, non-fluffy cloth.
+                - Do not apply creams or lotions.
             </blockquote>
         </section>
 
-        <!-- Call to Action Section -->
+        <!-- Contact Section -->
         <section id="contact" class="mb-8">
             <h2 class="text-xl font-bold mb-4">Get Started</h2>
-            <p class="text-gray-700">Download the tool now or contribute to its development on <a href="https://github.com/Tabs208/remotecare" class="text-blue-600 hover:underline">GitHub</a>.</p>
+            <p class="text-gray-700">Visit the <a href="https://github.com/Tabs208/remotecare" class="text-blue-600 hover:underline">GitHub repository</a> to download RemoteCare CLI and contribute to its development.</p>
         </section>
     </main>
 
     <footer class="bg-gray-800 text-white py-4 mt-8">
         <div class="container mx-auto text-center">
-            <p>&copy; 2025 Healthcare Access Tool. All Rights Reserved.</p>
+            <p>&copy; 2025 RemoteCare CLI. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
