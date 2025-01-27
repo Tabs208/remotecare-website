@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>RemoteCare CLI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Access Tool</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            padding: 20px;
             background: #f4f4f4;
         }
         h1 {
@@ -21,43 +23,91 @@
         }
     </style>
 </head>
-<body>
-    <h1>RemoteCare CLI</h1>
-    <p>A simple, command-line tool to manage medical emergencies in rural areas.</p>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Healthcare Access Tool</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#problem" class="hover:underline">Problem</a></li>
+                    <li><a href="#features" class="hover:underline">Features</a></li>
+                    <li><a href="#downloads" class="hover:underline">Downloads</a></li>
+                    <li><a href="#pricing" class="hover:underline">Pricing</a></li>
+                    <li><a href="#testimonials" class="hover:underline">Testimonials</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <h2>Features</h2>
-    <ul>
-        <li>Log emergencies</li>
-        <li>Prioritize cases</li>
-        <li>Access first aid guides</li>
-    </ul>
+    <main class="container mx-auto mt-8 px-4">
+        <!-- Problem Section -->
+        <section id="problem" class="mb-8">
+            <h2 class="text-xl font-bold mb-4">The Problem</h2>
+            <p class="text-gray-700">Millions in rural areas struggle with limited healthcare access. Our tool addresses this challenge by providing a user-friendly platform for scheduling teleconsultations, sharing health guidelines, and securely managing patient data.</p>
+        </section>
 
-    <h2>How to Use</h2>
-    <pre>
-        # Clone the repository
-        git clone https://github.com/Tabs208/remotecare.git
-        cd remotecare
+        <!-- Features Section -->
+        <section id="features" class="mb-8">
+            <h2 class="text-xl font-bold mb-4">Tool Features</h2>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Streamlined scheduling system for healthcare appointments.</li>
+                <li>Access to community-specific health guidelines.</li>
+                <li>Secure patient data sharing compliant with data privacy standards.</li>
+                <li>Log emergencies and prioritize cases (from CLI).</li>
+                <li>Access first aid guides (from CLI).</li>
+            </ul>
+        </section>
 
-        # Run the CLI tool
-        cargo run -- help
-    </pre>
+        <!-- Downloads Section -->
+        <section id="downloads" class="mb-8">
+            <h2 class="text-xl font-bold mb-4">Downloads</h2>
+            <p class="text-gray-700">Download platform-specific binaries below:</p>
+            <ul class="list-disc list-inside text-gray-700">
+                <li><a href="#" class="text-blue-600 hover:underline">Linux</a></li>
+                <li><a href="#" class="text-blue-600 hover:underline">Windows</a></li>
+                <li><a href="#" class="text-blue-600 hover:underline">macOS</a></li>
+                <li><a href="#" class="text-blue-600 hover:underline">ARM-based devices</a></li>
+            </ul>
+            <p class="mt-2">New users? Check out our <a href="#" class="text-blue-600 hover:underline">installation guide</a>.</p>
+            <pre class="bg-gray-200 p-4 rounded mt-4">
+                # Clone the repository
+                git clone https://github.com/Tabs208/remotecare.git
+                cd remotecare
 
-    <h2>CLI Tool Repository</h2>
-    <p>
-        The source code for the RemoteCare CLI tool is available on GitHub. Visit the repository here:
-        <a href="https://github.com/Tabs208/remotecare" target="_blank">
-            RemoteCare CLI GitHub Repository
-        </a>.
-    </p>
+                # Run the CLI tool
+                cargo run -- help
+            </pre>
+        </section>
 
-    <h2>Contribute</h2>
-    <p>Feel free to contribute to this project by submitting a pull request or reporting an issue.</p>
+        <!-- Pricing Section -->
+        <section id="pricing" class="mb-8">
+            <h2 class="text-xl font-bold mb-4">Pricing Model</h2>
+            <p class="text-gray-700">Our tool is <span class="font-bold">free for individual use</span> to ensure accessibility in rural areas. Advanced features for organizations, such as reporting and system integrations, are available through a paid subscription.</p>
+        </section>
 
-    <h2>About</h2>
-    <p>
-        RemoteCare CLI was designed to address medical challenges in rural areas by providing an accessible
-        and efficient tool for managing emergencies. Learn more about the tool by visiting the
-        <a href="https://github.com/Tabs208/remotecare" target="_blank">CLI repository</a>.
-    </p>
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="mb-8">
+            <h2 class="text-xl font-bold mb-4">Testimonials</h2>
+            <blockquote class="text-gray-700 italic border-l-4 border-blue-600 pl-4">
+                "This tool has revolutionized how we manage healthcare in rural Kenya! Scheduling and patient data sharing have never been easier." - Community Health Volunteer
+            </blockquote>
+            <blockquote class="text-gray-700 italic border-l-4 border-blue-600 pl-4 mt-4">
+                "An essential tool for NGOs supporting rural clinics." - NGO Representative
+            </blockquote>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section id="contact" class="mb-8">
+            <h2 class="text-xl font-bold mb-4">Get Started</h2>
+            <p class="text-gray-700">Download the tool now or contribute to its development on <a href="https://github.com/Tabs208/remotecare" class="text-blue-600 hover:underline">GitHub</a>.</p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Healthcare Access Tool. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
