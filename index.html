@@ -9,22 +9,33 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background: #f4f4f4;
+            background: #FAF3E0;
+            color: #444;
+        }
+        header {
+            background: #D4E6C3;
         }
         h1 {
-            color: #333;
+            color: #2E7D32;
         }
         a {
-            color: #007BFF;
+            color: #3B6E48;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
+        nav ul li a:hover {
+            color: #2E7D32;
+        }
+        footer {
+            background: #3B6E48;
+            color: #FAF3E0;
+        }
     </style>
 </head>
-<body class="bg-gray-100">
-    <header class="bg-blue-600 text-white p-4 shadow-md">
+<body>
+    <header class="text-white p-4 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-bold">RemoteCare CLI</h1>
             <nav>
@@ -32,6 +43,8 @@
                     <li><a href="#problem" class="hover:underline">Problem</a></li>
                     <li><a href="#features" class="hover:underline">Features</a></li>
                     <li><a href="#commands" class="hover:underline">Commands</a></li>
+                    <li><a href="#pricing" class="hover:underline">Pricing</a></li>
+                    <li><a href="#testimonials" class="hover:underline">Testimonials</a></li>
                     <li><a href="#contact" class="hover:underline">Contact</a></li>
                 </ul>
             </nav>
@@ -42,13 +55,13 @@
         <!-- Problem Section -->
         <section id="problem" class="mb-8">
             <h2 class="text-xl font-bold mb-4">The Problem</h2>
-            <p class="text-gray-700">In remote rural areas, access to emergency medical assistance is often delayed due to poor communication, lack of infrastructure, and limited availability of healthcare providers. RemoteCare CLI solves this by streamlining emergency management and communication.</p>
+            <p>In remote rural areas, access to emergency medical assistance is often delayed due to poor communication, lack of infrastructure, and limited availability of healthcare providers. RemoteCare CLI solves this by streamlining emergency management and communication.</p>
         </section>
 
         <!-- Features Section -->
         <section id="features" class="mb-8">
             <h2 class="text-xl font-bold mb-4">Core Features</h2>
-            <ul class="list-disc list-inside text-gray-700">
+            <ul class="list-disc list-inside">
                 <li>Log medical emergencies with details like patient name, location, symptoms, and severity level.</li>
                 <li>Prioritize emergencies based on severity (High > Medium > Low).</li>
                 <li>Notify nearby healthcare providers via SMS or email.</li>
@@ -60,34 +73,49 @@
         <section id="commands" class="mb-8">
             <h2 class="text-xl font-bold mb-4">How to Use</h2>
             <h3 class="text-lg font-semibold">Log Medical Emergencies</h3>
-            <pre class="bg-gray-200 p-4 rounded">
+            <pre class="bg-gray-100 p-4 rounded">
 remotecare log --name "John Doe" --symptoms "Severe chest pain" --location "Village A" --severity "High"
             </pre>
             <h3 class="text-lg font-semibold mt-4">Prioritize Cases</h3>
-            <pre class="bg-gray-200 p-4 rounded">
+            <pre class="bg-gray-100 p-4 rounded">
 remotecare prioritize
             </pre>
             <h3 class="text-lg font-semibold mt-4">View First Aid Guide</h3>
-            <pre class="bg-gray-200 p-4 rounded">
+            <pre class="bg-gray-100 p-4 rounded">
 remotecare guide --topic "burns"
             </pre>
-            <p class="text-gray-700 mt-2">Example Output:</p>
-            <blockquote class="bg-gray-100 border-l-4 border-blue-600 p-4 text-gray-700 italic">
-                First Aid for Burns:
-                - Cool the burn under running water for at least 10 minutes.
-                - Cover the burn with a clean, non-fluffy cloth.
-                - Do not apply creams or lotions.
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="mb-8">
+            <h2 class="text-xl font-bold mb-4">Pricing</h2>
+            <p>We offer a flexible pricing model to encourage adoption:</p>
+            <ul class="list-disc list-inside">
+                <li><strong>Free:</strong> For individual users in rural areas, ensuring accessibility for basic usage.</li>
+                <li><strong>Paid Subscription:</strong> For organizations like NGOs and healthcare centers, unlocking advanced features such as multi-user support, analytics, and custom integrations.</li>
+                <li><strong>Custom Solutions:</strong> Tailored deployments and localized versions available on request.</li>
+            </ul>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="mb-8">
+            <h2 class="text-xl font-bold mb-4">What Users Say</h2>
+            <blockquote class="border-l-4 pl-4">
+                "RemoteCare CLI has transformed emergency healthcare in our community! Logging and prioritizing emergencies has never been easier." - Community Health Worker
+            </blockquote>
+            <blockquote class="border-l-4 pl-4 mt-4">
+                "An invaluable tool for our rural health initiatives." - NGO Representative
             </blockquote>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="mb-8">
             <h2 class="text-xl font-bold mb-4">Get Started</h2>
-            <p class="text-gray-700">Visit the <a href="https://github.com/Tabs208/remotecare" class="text-blue-600 hover:underline">GitHub repository</a> to download RemoteCare CLI and contribute to its development.</p>
+            <p>Visit the <a href="https://github.com/Tabs208/remotecare" class="hover:underline">GitHub repository</a> to download RemoteCare CLI and contribute to its development. For partnerships or inquiries, reach us at <a href="mailto:info@remotecare.com" class="hover:underline">info@remotecare.com</a>.</p>
         </section>
     </main>
 
-    <footer class="bg-gray-800 text-white py-4 mt-8">
+    <footer class="py-4 mt-8">
         <div class="container mx-auto text-center">
             <p>&copy; 2025 RemoteCare CLI. All Rights Reserved.</p>
         </div>
